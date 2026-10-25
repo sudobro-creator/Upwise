@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moondu – Create New Experience With Ways Of Perfect Learning</title>
+<meta name="description" content="Special programs for your education: virtual class, scholarship program and student monitoring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#232323; --dark:#2b2b2c; --white:#fff;
+  --yellow:#fad557; --blue:#5b63f5; --pink:#ee8cf7; --green:#8fe36a; --mint:#47d6a0; --orange:#f5a14a;
+  --h:'Anton',Impact,'Arial Narrow',sans-serif; --b:'Outfit',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);background:#e9e9e9;color:#fff}
+.page{max-width:1200px;margin:0 auto;background:var(--ink);overflow:hidden;position:relative}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--h);font-weight:400;text-transform:uppercase;line-height:.98;letter-spacing:.5px}
+.float{position:absolute;pointer-events:none;filter:drop-shadow(0 6px 0 rgba(0,0,0,.35))}
+@media (prefers-reduced-motion:no-preference){
+  .bob{animation:bob 5s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(-12px) rotate(6deg)}}
+}
+
+/* NAV */
+nav{display:flex;align-items:center;justify-content:center;gap:clamp(20px,6vw,80px);padding:38px 20px;font-size:12px;color:#aaa;position:relative;z-index:3;flex-wrap:wrap}
+nav .logo{font-family:var(--b);font-weight:700;font-size:22px;color:#fff;letter-spacing:.5px}
+nav a:hover{color:#fff}
+nav .contact{border:2px dashed #888;border-radius:50px;padding:12px 28px}
+
+/* HERO */
+.hero{text-align:center;padding:30px 20px 120px;position:relative;background:radial-gradient(circle at 50% 30%,#2f2f31,var(--ink) 70%)}
+.hero h1{font-size:clamp(56px,11vw,128px);position:relative;z-index:2}
+.hero .y{color:var(--yellow);text-shadow:3px 3px 0 #b88d12}
+.hero .out{color:transparent;-webkit-text-stroke:2px #fff}
+.hero .dash{display:inline-block;color:var(--blue);border:3px dashed var(--blue);border-radius:18px;padding:0 14px;margin-left:8px;background:rgba(91,99,245,.08)}
+.badge{width:clamp(80px,10vw,120px);aspect-ratio:1;border-radius:50%;background:#f0ece4;border:6px solid #e3b79b;display:grid;place-items:center;font-size:40px;color:#222;box-shadow:0 8px 0 rgba(0,0,0,.3);transition:transform .3s}
+.badge:hover{transform:rotate(90deg)}
+.badge.green{border-color:#7ed957}
+.badge.grey{border-color:#d9d9d9}
+.hero .badge{position:absolute;left:19%;top:49%;z-index:3}
+.hero .pencil{left:12%;top:5%;font-size:90px;transform:rotate(-30deg)}
+.hero .globe{right:17%;top:8%;font-size:80px}
+.hero .planet{left:12%;top:58%;font-size:70px}
+.hero .book{right:10%;top:44%;font-size:90px}
+
+/* PROGRAMS */
+.programs{background:var(--dark);border-radius:60px 60px 0 0;margin-top:-60px;padding:90px clamp(20px,9vw,110px) 60px;position:relative;z-index:2}
+.programs .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:70px}
+.programs h2,.easy h2{font-size:clamp(44px,7vw,84px)}
+.sticker{display:inline-block;background:var(--green);color:#222;border:3px dashed #2f6b1c;border-radius:40px;padding:2px 22px;transform:rotate(-4deg);box-shadow:0 8px 0 rgba(0,0,0,.35)}
+.sticker.mint{background:var(--mint);color:#173;transform:none;padding:0 18px;margin:0 4px;border-color:#0b6}
+.head p{max-width:260px;font-size:11px;line-height:1.9;color:#aaa}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.card{border-radius:22px;padding:26px 20px 22px;color:#111;position:relative;min-height:290px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;box-shadow:0 10px 0 rgba(0,0,0,.35)}
+.card .ico{position:absolute;top:18px;left:0;right:0;text-align:center;font-size:130px;line-height:1.1;filter:drop-shadow(0 10px 8px rgba(0,0,0,.25))}
+.card h3{font-family:var(--b);font-weight:500;font-size:20px;text-transform:none;letter-spacing:0;margin-bottom:14px}
+.card p{font-size:11px;line-height:1.7;max-width:230px}
+.card.y{background:var(--yellow)} .card.b{background:var(--blue);color:#fff} .card.p{background:var(--pink)}
+.card:not(:last-child)::after{content:"";position:absolute;right:-6px;top:55px;width:26px;height:10px;background:#111;border-radius:10px;box-shadow:0 160px 0 #111}
+.programs .rocket{right:-10px;top:100px;font-size:100px;transform:rotate(25deg)}
+.programs .orb{left:55%;top:40px;font-size:70px}
+
+/* EASY / TABS */
+.easy{background:var(--dark);padding:60px clamp(20px,9vw,110px) 120px;position:relative}
+.easy h2{margin-bottom:60px;position:relative;z-index:2;max-width:900px}
+.tabs{display:flex;position:relative;z-index:2}
+.tab{font:500 18px var(--b);border:0;cursor:pointer;padding:22px 38px 20px;color:#111;border-radius:26px 26px 0 0;margin-right:-22px;text-align:center}
+.tab[data-t="0"]{background:var(--yellow)} .tab[data-t="1"]{background:var(--blue);color:#fff} .tab[data-t="2"]{background:var(--pink)}
+.tab[aria-selected="true"]{z-index:2}
+.tab:focus-visible,.cta:focus-visible,nav a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.panel{border-radius:0 30px 30px 30px;padding:60px 50px;display:grid;grid-template-columns:1fr 1.3fr;gap:30px;align-items:center;min-height:380px;position:relative;color:#111;z-index:1;box-shadow:0 10px 0 rgba(0,0,0,.35)}
+.panel[hidden]{display:none}
+.p0{background:var(--yellow)} .p1{background:var(--blue);color:#fff} .p2{background:var(--pink)}
+.panel h3{font-size:clamp(34px,4.5vw,52px);margin-bottom:22px}
+.panel p{font-size:11px;line-height:1.8;max-width:260px}
+.free{position:absolute;left:36%;bottom:30px;background:var(--orange);border:3px dashed #8a3d00;border-radius:26px;padding:10px 20px;font-family:var(--h);font-size:26px;text-transform:uppercase;transform:rotate(-20deg);color:#222;z-index:3}
+.mock{background:#ececec;border:4px solid #888;border-radius:24px;padding:14px;position:relative;z-index:2}
+.mock .bar{display:flex;gap:6px;margin:0 0 12px 44px}
+.mock .bar i{width:8px;height:8px;border-radius:50%;background:#e55}.mock .bar i:nth-child(2){background:#eb5}.mock .bar i:nth-child(3){background:#5b5}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tile{background:#fff;border-radius:14px;aspect-ratio:1.3;display:grid;place-items:center}
+.tile.warm{background:#ffe9c8}
+.tile span{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;font-size:44px}
+.easy .globe{right:-20px;top:50px;font-size:110px}
+.easy .moon{left:-40px;top:230px;font-size:140px}
+.easy .planet{right:-20px;bottom:40px;font-size:90px}
+.easy .badge{position:absolute;left:30px;bottom:50px;z-index:4;width:100px;font-size:30px}
+
+/* CTA */
+.cta-sec{background:#fff;border-radius:60px 60px 0 0;margin-top:-60px;position:relative;z-index:3;text-align:center;color:#fff;
+  background-image:linear-gradient(#d9d9d9 2px,transparent 2px),linear-gradient(90deg,#d9d9d9 2px,transparent 2px);background-size:150px 150px;padding:120px 20px 0}
+.cta-sec h2{font-size:clamp(60px,12vw,140px);max-width:900px;margin:0 auto;position:relative;line-height:.95}
+.cta-sec h2 span{display:block;-webkit-text-stroke:0;text-shadow:5px 5px 0 #111}
+.c-pink{color:var(--pink)} .c-blue{color:var(--blue)} .c-yel{color:var(--yellow)}
+.cta{display:inline-block;margin:50px 0 130px;background:#111;color:#fff;font:600 18px var(--b);padding:18px 40px;border-radius:50px;box-shadow:0 8px 0 var(--blue);transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(4px);box-shadow:0 4px 0 var(--blue)}
+.cta-sec .pencil{right:10%;top:300px;font-size:100px;transform:rotate(40deg)}
+.cta-sec .rocket{left:-10px;bottom:90px;font-size:100px;transform:rotate(-20deg)}
+.cta-sec .badge{position:absolute;left:12%;top:62%;z-index:3}
+footer{display:flex;justify-content:space-between;align-items:center;padding:36px clamp(20px,9vw,110px);color:#888;font-size:12px;background:rgba(255,255,255,.9);flex-wrap:wrap;gap:16px;position:relative}
+footer .logo{font-weight:700;font-size:22px;color:#111}
+.soc{display:flex;gap:14px}
+.soc a{width:20px;height:20px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;font-size:10px;font-weight:700}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .cards{grid-template-columns:1fr}
+  .card:not(:last-child)::after{display:none}
+  .panel{grid-template-columns:1fr;padding:40px 24px}
+  .free{position:static;display:inline-block;margin-top:16px}
+  .tab{padding:16px 14px;font-size:14px}
+  .float{opacity:.35}
+  .hero .badge{display:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <nav aria-label="Main">
+    <a href="#features">Feature</a>
+    <a href="#programs">Our Services</a>
+    <a href="#" class="logo">MOONDU</a>
+    <a href="#learn">About Us</a>
+    <a href="#join" class="contact">Contact Us</a>
+  </nav>
+  <span class="float pencil bob" aria-hidden="true">✏️</span>
+  <span class="float globe bob" aria-hidden="true">🌍</span>
+  <span class="float planet bob" aria-hidden="true">🪐</span>
+  <span class="float book bob" aria-hidden="true">📖</span>
+  <a class="badge" href="#programs" aria-label="Explore programs">↗</a>
+  <h1>Create new<br><span class="y">Experience</span> with<br><span class="out">ways of</span><br>perfect <span class="dash">learning</span></h1>
+</header>
+
+<section class="programs" id="programs">
+  <span class="float orb bob" aria-hidden="true">🔮</span>
+  <span class="float rocket" aria-hidden="true">🚀</span>
+  <div class="head">
+    <h2>Our special programs<br>for your <span class="sticker">Education</span></h2>
+    <p>We provide special service for both parents and students such as scholarship, virtual class, and student monitoring.</p>
+  </div>
+  <div class="cards" id="features">
+    <article class="card y"><div class="ico" aria-hidden="true">📷</div><h3>Virtual Class</h3><p>Provide online tutoring services to students of all ages and educational levels.</p></article>
+    <article class="card b"><div class="ico" aria-hidden="true">🎓</div><h3>Scholarship Program</h3><p>Provide online tutoring services to students of all ages and educational levels.</p></article>
+    <article class="card p"><div class="ico" aria-hidden="true">📊</div><h3>Student Monitoring</h3><p>Provide online tutoring services to students of all ages and educational levels.</p></article>
+  </div>
+</section>
+
+<section class="easy" id="learn">
+  <span class="float globe bob" aria-hidden="true">🌎</span>
+  <span class="float moon" aria-hidden="true">🔵</span>
+  <span class="float planet bob" aria-hidden="true">🪐</span>
+  <h2>Our program is <span class="sticker mint">Easy</span> to use and useful for the future</h2>
+
+  <div class="tabs" role="tablist" aria-label="Programs">
+    <button class="tab" role="tab" id="t0" data-t="0" aria-selected="true" aria-controls="p0">Virtual Class</button>
+    <button class="tab" role="tab" id="t1" data-t="1" aria-selected="false" aria-controls="p1" tabindex="-1">Scholarship Program</button>
+    <button class="tab" role="tab" id="t2" data-t="2" aria-selected="false" aria-controls="p2" tabindex="-1">Student Monitoring</button>
+  </div>
+
+  <div class="panel p0" id="p0" role="tabpanel" aria-labelledby="t0">
+    <div><h3>Learning virtually everywhere.</h3><p>We provide learning virtually for students in anywhere and we provide recording while students doesn't attend the virtual class.</p></div>
+    <div class="mock"><div class="bar"><i></i><i></i><i></i></div>
+      <div class="grid"><div class="tile"><span style="background:#bfe6f5">🧑‍🎤</span></div><div class="tile warm"><span style="background:#ffd9a6">🤓</span></div><div class="tile"><span style="background:#f9b8bd">🧑</span></div><div class="tile"><span style="background:#d6ccf5">🧕</span></div></div>
+    </div>
+    <div class="free">Totally free!</div>
+  </div>
+
+  <div class="panel p1" id="p1" role="tabpanel" aria-labelledby="t1" hidden>
+    <div><h3>Funding your next step.</h3><p>We match motivated students with scholarships, so money never decides who gets to keep learning.</p></div>
+    <div class="mock"><div class="bar"><i></i><i></i><i></i></div>
+      <div class="grid"><div class="tile"><span style="background:#e5e7ff">🎓</span></div><div class="tile warm"><span style="background:#ffd9a6">🏅</span></div><div class="tile"><span style="background:#f9b8bd">📚</span></div><div class="tile"><span style="background:#d6f5e0">💡</span></div></div>
+    </div>
+    <div class="free">Apply today!</div>
+  </div>
+
+  <div class="panel p2" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+    <div><h3>Progress parents can see.</h3><p>Follow attendance, grades and learning goals in one place, so parents and teachers stay on the same page.</p></div>
+    <div class="mock"><div class="bar"><i></i><i></i><i></i></div>
+      <div class="grid"><div class="tile"><span style="background:#ffe1f9">📈</span></div><div class="tile warm"><span style="background:#ffd9a6">🗓️</span></div><div class="tile"><span style="background:#d6ccf5">✅</span></div><div class="tile"><span style="background:#bfe6f5">🔔</span></div></div>
+    </div>
+    <div class="free">Always on!</div>
+  </div>
+  <a class="badge grey" href="#join" aria-label="Join Moondu">↗</a>
+</section>
+
+<section class="cta-sec" id="join">
+  <span class="float pencil bob" aria-hidden="true">✏️</span>
+  <span class="float rocket" aria-hidden="true">🚀</span>
+  <a class="badge green" href="#" aria-label="Start learning">↗</a>
+  <h2><span class="c-pink">Let's unlock</span><span class="c-blue">your potential</span><span class="c-blue">with <b class="c-yel" style="font-weight:400">Moondu</b></span></h2>
+  <a class="cta" href="mailto:hello@moondu.com">Start learning today</a>
+  <footer>
+    <span class="logo">MOONDU</span>
+    <span>Copyright @Emoon 2022 All Right Reserved</span>
+    <div class="soc"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Twitter">t</a><a href="#" aria-label="YouTube">▶</a></div>
+  </footer>
+</section>
+
+</div>
+<script>
+const tabs=[...document.querySelectorAll('.tab')],panels=[...document.querySelectorAll('.panel')];
+function show(i){tabs.forEach((t,n)=>{t.setAttribute('aria-selected',n===i);t.tabIndex=n===i?0:-1;panels[n].hidden=n!==i;});}
+tabs.forEach((t,i)=>{
+  t.addEventListener('click',()=>show(i));
+  t.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const n=(i+(e.key==='ArrowRight'?1:-1)+3)%3;show(n);tabs[n].focus();}
+  });
+});
+</script>
+</body>
+</html>
