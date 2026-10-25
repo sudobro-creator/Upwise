@@ -1,0 +1,12 @@
+/* Design tokens */
+:root{
+  --ink:#232323; --dark:#2b2b2c; --white:#fff;
+  --yellow:#fad557; --blue:#5b63f5; --pink:#ee8cf7;
+  --green:#8fe36a; --mint:#47d6a0; --orange:#f5a14a;
+  --font-display:'Anton',Impact,'Arial Narrow',sans-serif;
+  --font-body:'Outfit',system-ui,sans-serif;
+  --container:1200px;
+  --gutter:clamp(20px,6vw,60px);
+  --radius-lg:60px;
+  --shadow-hard:0 10px 0 rgba(0,0,0,.35);
+}

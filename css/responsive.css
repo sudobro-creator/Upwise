@@ -1,0 +1,10 @@
+/* Breakpoints */
+@media (max-width:900px){
+  .cards{grid-template-columns:1fr}
+  .card:not(:last-child)::after{display:none}
+  .panel{grid-template-columns:1fr;padding:40px 24px}
+  .panel__tag{position:static;display:inline-block;margin-top:16px}
+  .tab{padding:16px 14px;font-size:14px}
+  .float{opacity:.35}
+  .hero .badge{display:none}
+}

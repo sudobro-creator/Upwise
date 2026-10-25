@@ -1,0 +1,13 @@
+/* Reset + global typography */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--ink);color:var(--white);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:.98;letter-spacing:.5px}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter);position:relative}
+.float{position:absolute;pointer-events:none;filter:drop-shadow(0 6px 0 rgba(0,0,0,.35))}
+@media (prefers-reduced-motion:no-preference){
+  .bob{animation:bob 5s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(-12px) rotate(6deg)}}
+}
